@@ -6,36 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./image/logo.jpg" type="image/x-icon">
     <title>OnePlus Ace 5</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
     <style>
+        /* --- BEGIN CẬP NHẬT CHUNG --- */
         body {
-            font-family: Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.7;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+            background-color: #f8f9fa;
+            color: #343a40;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
 
         .container {
-            width: 80%;
+            width: 85%;
             margin: auto;
             overflow: hidden;
             padding: 0 20px;
         }
 
         header {
-            background: #333;
-            color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #0779e4 3px solid;
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding-top: 25px;
+            min-height: 60px;
+            border-bottom: #e74c3c 4px solid;
         }
 
         header a {
-            color: #fff;
+            color: #ecf0f1;
             text-decoration: none;
             text-transform: uppercase;
             font-size: 16px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
         }
 
         header ul {
@@ -45,203 +55,259 @@
 
         header li {
             display: inline;
-            padding: 0 20px 0 20px;
-        }
-
-        header #branding {
-            float: left;
+            padding: 0 15px 0 15px;
         }
 
         header #branding h1 {
             margin: 0;
+            font-size: 28px;
         }
 
         header nav {
             float: right;
-            margin-top: 10px;
+            margin-top: 8px;
         }
 
-        /* --- BEGIN MENU THÔNG SỐ SỬA ĐỔI --- */
+        /* --- END CẬP NHẬT CHUNG --- */
+
+
+        /* --- BEGIN MENU THÔNG SỐ SỬA ĐỔI NÂNG CAO --- */
         #main-nav {
-            background-color: #444;
-            color: #fff;
+            background-color: #34495e;
+            color: #ecf0f1;
             position: sticky;
             top: 0;
             z-index: 1000;
-            /* Desktop styling */
-            padding: 10px 0;
+            padding: 12px 0;
             text-align: center;
-        }
-
-        /* Thanh điều hướng cho mobile, ẩn trên desktop */
-        #mobile-nav-bar {
-            display: none;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         }
 
         #main-nav ul#nav-links {
             padding: 0;
             list-style: none;
             margin: 0;
+            display: flex;
+            justify-content: center;
         }
 
         #main-nav li {
             display: inline;
-            margin: 0 10px;
+            margin: 0 8px;
         }
 
         #main-nav a {
-            color: #fff;
+            font-family: 'Montserrat', sans-serif;
+            color: #ecf0f1;
             text-decoration: none;
-            font-weight: bold;
-            padding: 5px 10px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease, color 0.3s ease;
-            /* Thêm color transition */
+            font-weight: 500;
+            padding: 10px 18px;
+            border-radius: 6px;
+            transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+            display: inline-block;
+            letter-spacing: 0.5px;
         }
 
-        /* Màu nền khi hover */
         #main-nav a:hover {
-            background-color: #0779e4;
-            color: #fff;
+            background-color: #e74c3c;
+            color: #ffffff;
+            transform: translateY(-2px);
         }
 
-        /* YÊU CẦU 1: Màu nền cho link active */
         #main-nav a.active-link {
-            background-color: #0779e4;
-            color: #fff;
+            background-color: #e74c3c;
+            color: #ffffff;
+            font-weight: 600;
+            box-shadow: 0 0 8px rgba(231, 76, 60, 0.5);
         }
 
-        /* --- END MENU THÔNG SỐ SỬA ĐỔI --- */
+        #mobile-nav-bar {
+            display: none;
+            background-color: #34495e;
+        }
 
+        /* --- END MENU THÔNG SỐ SỬA ĐỔI NÂNG CAO --- */
+
+
+        /* --- BEGIN CẬP NHẬT NỘI DUNG CHÍNH --- */
         .main-content {
-            padding: 20px;
-            background: #fff;
-            margin-top: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            background: #ffffff;
+            margin-top: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
         }
 
         .main-content p {
             text-align: justify;
+            font-size: 16px;
+            color: #495057;
+            margin-bottom: 1.2em;
         }
 
         .main-content h1,
         .main-content h2 {
-            color: #0779e4;
-            border-bottom: 2px solid #f4f4f4;
-            padding-bottom: 10px;
+            font-family: 'Montserrat', sans-serif;
+            color: #2c3e50;
+            border-bottom: 3px solid #e9ecef;
+            padding-bottom: 12px;
+            font-weight: 600;
         }
 
         .main-content h1 {
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
+            font-size: 2.2em;
         }
 
         .main-content h2 {
-            margin-top: 30px;
+            margin-top: 35px;
+            font-size: 1.8em;
         }
 
         .main-content img {
             max-width: 100%;
             height: auto;
             display: block;
-            margin: 20px auto;
-            border-radius: 5px;
-            box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+            margin: 25px auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
         }
 
+        /* --- END CẬP NHẬT NỘI DUNG CHÍNH --- */
+
+
+        /* --- BEGIN CẬP NHẬT BẢNG BIỂU --- */
         table {
             width: 100%;
-            margin: 20px 0;
+            margin: 25px 0;
             border-collapse: collapse;
-            box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 1px 8px rgba(0, 0, 0, 0.07);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th,
+        td {
+            padding: 14px;
+            text-align: left;
+            border-bottom: 1px solid #dee2e6;
+            font-size: 15px;
         }
 
         table,
         th,
         td {
-            border: 1px solid #ddd;
+            border: none;
         }
 
-        th,
-        td {
-            padding: 12px;
-            text-align: left;
+        table td {
+            border-bottom: 1px solid #dee2e6;
         }
 
-        th {
-            background-color: #0779e4;
-            color: white;
-        }
-
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
-
-        tr:hover {
-            background-color: #e9e9e9;
-        }
-
-        ul.pros-cons {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        ul.pros-cons li {
-            padding: 8px 0;
-            border-bottom: 1px dotted #ccc;
-        }
-
-        ul.pros-cons li:last-child {
+        table tr:last-child td {
             border-bottom: none;
         }
 
+        th {
+            background-color: #4a6fa5;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+
+        tr:hover {
+            background-color: #e9ecef;
+        }
+
+        /* --- END CẬP NHẬT BẢNG BIỂU --- */
+
+        /* --- BEGIN CSS CHO BẢNG RESPONSIVE --- */
+        .table-responsive-wrapper {
+            display: block;
+            width: 100%;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            /* Cải thiện trải nghiệm cuộn trên iOS */
+            margin-top: 1em;
+            margin-bottom: 1.5em;
+        }
+
+        /* --- END CSS CHO BẢNG RESPONSIVE --- */
+
+
+        /* --- BEGIN CẬP NHẬT ƯU NHƯỢC ĐIỂM --- */
+        ul.pros-cons li {
+            padding: 10px 0;
+            border-bottom: 1px dashed #ced4da;
+            font-size: 15px;
+        }
+
         ul.pros-cons li::before {
-            margin-right: 10px;
-            font-weight: bold;
+            margin-right: 12px;
+            font-size: 1.1em;
         }
 
         ul.pros-cons li.pro::before {
-            content: '✅';
-            color: green;
+            content: '👍';
+            color: #28a745;
         }
 
         ul.pros-cons li.con::before {
-            content: '⚠️';
-            color: red;
+            content: '👎';
+            color: #dc3545;
         }
 
+        /* --- END CẬP NHẬT ƯU NHƯỢC ĐIỂM --- */
+
+
+        /* --- BEGIN CẬP NHẬT FOOTER VÀ NÚT SCROLL --- */
         footer {
-            padding: 20px;
-            margin-top: 20px;
-            color: #fff;
-            background-color: #333;
+            padding: 25px;
+            margin-top: 25px;
+            color: #ecf0f1;
+            background-color: #2c3e50;
             text-align: center;
+            font-family: 'Montserrat', sans-serif;
         }
 
         #scrollTopBtn {
             display: none;
             position: fixed;
-            bottom: 20px;
-            right: 30px;
+            bottom: 25px;
+            right: 25px;
             z-index: 99;
             border: none;
             outline: none;
-            background-color: #0779e4;
+            background-color: #e74c3c;
             color: white;
             cursor: pointer;
-            padding: 15px;
-            border-radius: 10px;
-            font-size: 18px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            padding: 12px 16px;
+            border-radius: 50%;
+            font-size: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s ease, transform 0.2s ease;
         }
 
         #scrollTopBtn:hover {
-            background-color: #0056b3;
+            background-color: #c0392b;
+            transform: scale(1.1);
         }
 
-        /* Responsive */
+        /* --- END CẬP NHẬT FOOTER VÀ NÚT SCROLL --- */
+
+
+        /* --- BEGIN CẬP NHẬT RESPONSIVE --- */
         @media(max-width: 768px) {
+            .container {
+                width: 90%;
+            }
 
             header #branding,
             header nav,
@@ -252,132 +318,139 @@
             }
 
             header nav {
-                margin-top: 0;
+                margin-top: 10px;
             }
 
-            .container {
-                width: 95%;
+            header #branding h1 {
+                font-size: 24px;
             }
 
-            /* --- BEGIN CSS RESPONSIVE CHO #main-nav --- */
+            /* --- BEGIN CSS RESPONSIVE CHO #main-nav NÂNG CAO --- */
             #main-nav {
                 padding: 0;
-                /* Bỏ padding của #main-nav cha trên mobile */
-                /* text-align: left; Sẽ được điều khiển bởi flexbox */
             }
 
-            /* Thanh nav trên mobile */
             #mobile-nav-bar {
                 display: flex;
-                /* Kích hoạt flexbox */
                 align-items: center;
-                /* Căn giữa theo chiều dọc */
-                background-color: #444;
-                /* Nền cho thanh */
-                height: 50px;
-                /* Chiều cao cố định cho thanh */
-                padding: 0 10px;
-                /* Padding hai bên */
-                border-bottom: 1px solid #555;
-                /* Đường kẻ dưới */
+                background-color: #34495e;
+                height: 55px;
+                padding: 0 15px;
+                border-bottom: 1px solid #2c3e50;
             }
 
             #menu-hamburger-icon {
                 background: transparent;
                 border: none;
-                color: white;
-                font-size: 24px;
-                /* Kích thước biểu tượng */
+                color: #ecf0f1;
+                font-size: 28px;
                 cursor: pointer;
                 padding: 10px;
-                /* Tăng vùng chạm */
-                margin-right: 10px;
-                /* Khoảng cách với tiêu đề */
+                margin-right: 15px;
+                transition: transform 0.3s ease;
+            }
+
+            #menu-hamburger-icon[aria-expanded="true"] {
+                transform: rotate(90deg);
             }
 
             #current-section-title {
-                color: white;
-                font-weight: bold;
-                font-size: 16px;
+                color: #ecf0f1;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 500;
+                font-size: 17px;
                 flex-grow: 1;
-                /* Cho phép tiêu đề chiếm không gian còn lại */
                 text-align: center;
-                /* Căn giữa tiêu đề */
                 overflow: hidden;
-                /* Chống tràn chữ */
                 white-space: nowrap;
-                /* Không xuống dòng */
                 text-overflow: ellipsis;
-                /* Hiển thị ... nếu quá dài */
             }
 
-            /* Danh sách menu xổ xuống */
+            /* Sửa lỗi menu mobile hiển thị ngang */
             #main-nav ul#nav-links {
-                display: none;
+                display: block;
+                /* Quan trọng: Đảm bảo hiển thị block để các li con xếp dọc */
                 position: absolute;
-                /* Để không đẩy nội dung khác xuống */
                 width: 100%;
-                top: 50px;
-                /* Ngay dưới #mobile-nav-bar (chiều cao 50px) */
+                top: 55px;
                 left: 0;
-                background-color: #3a3a3a;
-                /* Màu nền hơi khác để phân biệt */
+                background-color: #2c3e50;
                 z-index: 999;
-                /* Dưới #main-nav nhưng trên nội dung */
-                box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
+                /* Xóa bỏ flexbox từ desktop style nếu nó gây ảnh hưởng */
+                justify-content: flex-start;
+                /* Hoặc bất kỳ giá trị nào phù hợp, hoặc bỏ hẳn */
             }
 
             #main-nav ul#nav-links.active {
-                display: block;
+                max-height: 500px;
+                /* Điều chỉnh nếu cần */
             }
 
+            /* Các li con đã có display:block nên sẽ tự xếp dọc */
             #main-nav li {
-                display: block;
+                /* display: block; -- Đã có ở CSS cũ, đảm bảo nó vẫn còn */
                 margin: 0;
+                /* Reset margin trên mobile */
                 width: 100%;
+                /* Đảm bảo li chiếm toàn bộ chiều rộng */
             }
 
             #main-nav a {
-                /* Style cho các link trong menu xổ xuống */
                 display: block;
-                padding: 14px 20px;
+                padding: 18px 20px;
                 border-radius: 0;
                 text-align: center;
-                border-bottom: 1px solid #505050;
-                font-weight: normal;
-                /* Giảm độ đậm nếu muốn */
+                border-bottom: 1px solid #34495e;
+                font-weight: 500;
+                font-size: 16px;
+                transition: background-color 0.3s ease, color 0.3s ease;
             }
 
-            /* Active link trên mobile cũng có màu nền */
+            #main-nav a:hover {
+                transform: none;
+            }
+
             #main-nav ul#nav-links a.active-link {
-                background-color: #0779e4;
-                color: #fff;
+                background-color: #e74c3c;
+                color: #ffffff;
+                font-weight: 600;
+                box-shadow: none;
             }
 
             #main-nav li:last-child a {
                 border-bottom: none;
             }
 
-            /* --- END CSS RESPONSIVE CHO #main-nav --- */
+            /* --- END CSS RESPONSIVE CHO #main-nav NÂNG CAO --- */
+
+            .main-content h1 {
+                font-size: 1.8em;
+            }
+
+            .main-content h2 {
+                font-size: 1.5em;
+            }
+
+            .main-content p {
+                font-size: 15px;
+            }
+
+            th,
+            td {
+                font-size: 14px;
+                padding: 12px;
+            }
+
+            ul.pros-cons li {
+                font-size: 14px;
+            }
         }
 
-        /* --- BEGIN CSS CHO BẢNG RESPONSIVE --- */
-        .table-responsive-wrapper {
-            display: block;
-            /* Đảm bảo div là block-level element */
-            width: 100%;
-            /* Chiếm toàn bộ chiều rộng của container cha */
-            overflow-x: auto;
-            /* Đây là thuộc tính quan trọng, cho phép cuộn ngang */
-            -webkit-overflow-scrolling: touch;
-            /* Cải thiện trải nghiệm cuộn trên các thiết bị iOS */
-            margin-top: 1em;
-            /* Khoảng cách phía trên bảng */
-            margin-bottom: 1.5em;
-            /* Khoảng cách phía dưới bảng */
-        }
-
-        /* --- END CSS CHO BẢNG RESPONSIVE --- */
+        /* --- END CẬP NHẬT RESPONSIVE --- */
     </style>
 </head>
 
@@ -433,82 +506,84 @@
                     biệt quan trọng trong bối cảnh thị trường smartphone ngày càng cạnh tranh khốc liệt.</p>
 
                 <h2>Bảng 1: OnePlus Ace 5 - Thông số kỹ thuật chính</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Tính năng</th>
-                            <th>Thông số kỹ thuật</th>
-                            <th>Nguồn tham khảo</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Màn hình</strong></td>
-                            <td>6.78 inch LTPO AMOLED, 1.5K (1264x2780 pixels), 120Hz, độ sáng tối đa 4500 nits</td>
-                            <td>[1, 2]</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Chipset</strong></td>
-                            <td>Qualcomm Snapdragon 8 Gen 3 (4nm)</td>
-                            <td>[1, 2]</td>
-                        </tr>
-                        <tr>
-                            <td><strong>GPU</strong></td>
-                            <td>Adreno 750</td>
-                            <td>[1, 2]</td>
-                        </tr>
-                        <tr>
-                            <td><strong>RAM</strong></td>
-                            <td>12GB/16GB LPDDR5X</td>
-                            <td>[1, 3]</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Bộ nhớ trong</strong></td>
-                            <td>256GB/512GB/1TB UFS 4.0</td>
-                            <td>[1, 3]</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Camera sau</strong></td>
-                            <td>Chính 50MP (Sony IMX890, OIS), Siêu rộng 8MP, Macro 2MP</td>
-                            <td>[1, 3]</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Camera trước</strong></td>
-                            <td>16MP</td>
-                            <td>[1, 3]</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Pin</strong></td>
-                            <td>6415mAh</td>
-                            <td>[1, 2]</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Sạc</strong></td>
-                            <td>80W SuperVOOC</td>
-                            <td>[1, 2]</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Hệ điều hành</strong></td>
-                            <td>Android 15 (ColorOS 15/OxygenOS 15)</td>
-                            <td>[1, 2]</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Kích thước</strong></td>
-                            <td>161.7 x 75.8 x 8.1 mm</td>
-                            <td>[1]</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Trọng lượng</strong></td>
-                            <td>206g (mặt lưng kính) hoặc 223g (mặt lưng gốm)</td>
-                            <td>[1]</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Kháng nước, bụi</strong></td>
-                            <td>IP65</td>
-                            <td>[1, 4]</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="table-responsive-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Tính năng</th>
+                                <th>Thông số kỹ thuật</th>
+                                <th>Nguồn tham khảo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Màn hình</strong></td>
+                                <td>6.78 inch LTPO AMOLED, 1.5K (1264x2780 pixels), 120Hz, độ sáng tối đa 4500 nits</td>
+                                <td>[1, 2]</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Chipset</strong></td>
+                                <td>Qualcomm Snapdragon 8 Gen 3 (4nm)</td>
+                                <td>[1, 2]</td>
+                            </tr>
+                            <tr>
+                                <td><strong>GPU</strong></td>
+                                <td>Adreno 750</td>
+                                <td>[1, 2]</td>
+                            </tr>
+                            <tr>
+                                <td><strong>RAM</strong></td>
+                                <td>12GB/16GB LPDDR5X</td>
+                                <td>[1, 3]</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Bộ nhớ trong</strong></td>
+                                <td>256GB/512GB/1TB UFS 4.0</td>
+                                <td>[1, 3]</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Camera sau</strong></td>
+                                <td>Chính 50MP (Sony IMX890, OIS), Siêu rộng 8MP, Macro 2MP</td>
+                                <td>[1, 3]</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Camera trước</strong></td>
+                                <td>16MP</td>
+                                <td>[1, 3]</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Pin</strong></td>
+                                <td>6415mAh</td>
+                                <td>[1, 2]</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Sạc</strong></td>
+                                <td>80W SuperVOOC</td>
+                                <td>[1, 2]</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Hệ điều hành</strong></td>
+                                <td>Android 15 (ColorOS 15/OxygenOS 15)</td>
+                                <td>[1, 2]</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Kích thước</strong></td>
+                                <td>161.7 x 75.8 x 8.1 mm</td>
+                                <td>[1]</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Trọng lượng</strong></td>
+                                <td>206g (mặt lưng kính) hoặc 223g (mặt lưng gốm)</td>
+                                <td>[1]</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Kháng nước, bụi</strong></td>
+                                <td>IP65</td>
+                                <td>[1, 4]</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </section>
 
             <section id="thiet-ke">
@@ -604,63 +679,65 @@
                     4.0 siêu nhanh là nền tảng vững chắc cho một hiệu năng flagship.</p>
 
                 <h3>Bảng 2: OnePlus Ace 5 - Tổng hợp điểm Benchmark (Tham khảo)</h3>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Benchmark</th>
-                            <th>Điểm số</th>
-                            <th>Nguồn tham khảo</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>AnTuTu 10 (Trung bình)</strong></td>
-                            <td>~2,124,756</td>
-                            <td>[17]</td>
-                        </tr>
-                        <tr>
-                            <td><em>CPU</em></td>
-                            <td>468,076</td>
-                            <td>[17]</td>
-                        </tr>
-                        <tr>
-                            <td><em>GPU</em></td>
-                            <td>881,160</td>
-                            <td>[17]</td>
-                        </tr>
-                        <tr>
-                            <td><em>Memory</em></td>
-                            <td>402,890</td>
-                            <td>[17]</td>
-                        </tr>
-                        <tr>
-                            <td><em>UX</em></td>
-                            <td>372,630</td>
-                            <td>[17]</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Geekbench 6 (Đơn nhân)</strong></td>
-                            <td>~1950 - 2100+ (OnePlus 13R: 6803v6 cho đa nhân, điểm đơn nhân có thể suy ra từ các
-                                nguồn khác)</td>
-                            <td>[3, 18]</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Geekbench 6 (Đa nhân)</strong></td>
-                            <td>~6800 - 7000+ (OnePlus 13R: 6803)</td>
-                            <td>[3, 18]</td>
-                        </tr>
-                        <tr>
-                            <td><strong>3DMark Wild Life Extreme</strong></td>
-                            <td>4979 (cho OnePlus 13R, cấu hình tương tự)</td>
-                            <td>[18]</td>
-                        </tr>
-                        <tr>
-                            <td><strong>3DMark Solar Bay</strong></td>
-                            <td>8496</td>
-                            <td>[19]</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="table-responsive-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Benchmark</th>
+                                <th>Điểm số</th>
+                                <th>Nguồn tham khảo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>AnTuTu 10 (Trung bình)</strong></td>
+                                <td>~2,124,756</td>
+                                <td>[17]</td>
+                            </tr>
+                            <tr>
+                                <td><em>CPU</em></td>
+                                <td>468,076</td>
+                                <td>[17]</td>
+                            </tr>
+                            <tr>
+                                <td><em>GPU</em></td>
+                                <td>881,160</td>
+                                <td>[17]</td>
+                            </tr>
+                            <tr>
+                                <td><em>Memory</em></td>
+                                <td>402,890</td>
+                                <td>[17]</td>
+                            </tr>
+                            <tr>
+                                <td><em>UX</em></td>
+                                <td>372,630</td>
+                                <td>[17]</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Geekbench 6 (Đơn nhân)</strong></td>
+                                <td>~1950 - 2100+ (OnePlus 13R: 6803v6 cho đa nhân, điểm đơn nhân có thể suy ra từ các
+                                    nguồn khác)</td>
+                                <td>[3, 18]</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Geekbench 6 (Đa nhân)</strong></td>
+                                <td>~6800 - 7000+ (OnePlus 13R: 6803)</td>
+                                <td>[3, 18]</td>
+                            </tr>
+                            <tr>
+                                <td><strong>3DMark Wild Life Extreme</strong></td>
+                                <td>4979 (cho OnePlus 13R, cấu hình tương tự)</td>
+                                <td>[18]</td>
+                            </tr>
+                            <tr>
+                                <td><strong>3DMark Solar Bay</strong></td>
+                                <td>8496</td>
+                                <td>[19]</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
                 <p><em>Lưu ý: Điểm benchmark có thể thay đổi tùy thuộc vào phiên bản phần mềm và điều kiện thử
                         nghiệm.</em></p>
 
@@ -852,42 +929,44 @@
 
                 <h3>Bảng 3: Giá OnePlus Ace 5 tại Việt Nam (VNĐ) theo phiên bản (Tham khảo MobileCity - T5/2025)
                 </h3>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Phiên bản RAM/Bộ nhớ</th>
-                            <th>Giá bán (VNĐ)</th>
-                            <th>Nguồn tham khảo</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>12GB + 256GB</td>
-                            <td>8.250.000</td>
-                            <td>[9]</td>
-                        </tr>
-                        <tr>
-                            <td>16GB + 256GB</td>
-                            <td>8.950.000</td>
-                            <td>[9]</td>
-                        </tr>
-                        <tr>
-                            <td>12GB + 512GB</td>
-                            <td>10.350.000</td>
-                            <td>[9]</td>
-                        </tr>
-                        <tr>
-                            <td>16GB + 512GB</td>
-                            <td>11.050.000</td>
-                            <td>[9]</td>
-                        </tr>
-                        <tr>
-                            <td>16GB + 1TB</td>
-                            <td>12.250.000</td>
-                            <td>[9]</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="table-responsive-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Phiên bản RAM/Bộ nhớ</th>
+                                <th>Giá bán (VNĐ)</th>
+                                <th>Nguồn tham khảo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>12GB + 256GB</td>
+                                <td>8.250.000</td>
+                                <td>[9]</td>
+                            </tr>
+                            <tr>
+                                <td>16GB + 256GB</td>
+                                <td>8.950.000</td>
+                                <td>[9]</td>
+                            </tr>
+                            <tr>
+                                <td>12GB + 512GB</td>
+                                <td>10.350.000</td>
+                                <td>[9]</td>
+                            </tr>
+                            <tr>
+                                <td>16GB + 512GB</td>
+                                <td>11.050.000</td>
+                                <td>[9]</td>
+                            </tr>
+                            <tr>
+                                <td>16GB + 1TB</td>
+                                <td>12.250.000</td>
+                                <td>[9]</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
 
                 <p>Trong phân khúc "cận cao cấp" tại Việt Nam, OnePlus Ace 5 phải đối mặt với sự cạnh tranh gay gắt
                     từ nhiều thương hiệu lớn khác, mỗi thương hiệu đều có những sản phẩm mạnh mẽ với mức giá hấp
@@ -1072,9 +1151,8 @@
             const navLinksContainer = document.getElementById('nav-links');
             const mainNavLinks = navLinksContainer.querySelectorAll('a[href^="#"]');
             const sections = [];
-            const defaultMobileTitle = "Menu Thông Số"; // Tiêu đề mặc định khi không có section nào active
+            const defaultMobileTitle = "Menu Thông Số";
 
-            // Khởi tạo tiêu đề ban đầu cho mobile
             if (window.innerWidth <= 768 && currentSectionTitleEl) {
                 currentSectionTitleEl.textContent = defaultMobileTitle;
             }
@@ -1100,26 +1178,22 @@
 
             function updateActiveState(clickedLink = null) {
                 let currentActiveLink = null;
-                let currentVisibleSectionText = null; // Lưu text của section đang hiển thị
+                let currentVisibleSectionText = null;
 
                 const navHeight = mainNav.offsetHeight;
-                const scrollPosition = window.scrollY;
+                // const scrollPosition = window.scrollY; // Không còn dùng trực tiếp
 
                 if (clickedLink) {
                     currentActiveLink = clickedLink;
                     currentVisibleSectionText = clickedLink.textContent;
                 } else {
                     for (const item of sections) {
-                        // Tính toán vị trí top của section so với viewport, có tính chiều cao của nav bar
                         const sectionTopRelativeToViewport = item.sectionElement.getBoundingClientRect().top - navHeight;
                         const sectionHeight = item.sectionElement.offsetHeight;
 
-                        // Một section được coi là "active" nếu phần lớn của nó nằm trong viewport
-                        // hoặc nếu đỉnh của nó nằm gần đỉnh viewport (trong khoảng offset nhất định)
-                        // Điều chỉnh ngưỡng này để có trải nghiệm tốt nhất
-                        // Ví dụ: section active nếu đỉnh của nó cách đỉnh viewport <= 1/3 chiều cao viewport
-                        // và đáy của nó chưa hoàn toàn cuộn qua đỉnh viewport
-                        if (sectionTopRelativeToViewport <= window.innerHeight / 3 && (sectionTopRelativeToViewport + sectionHeight) > navHeight / 2) {
+                        // Ngưỡng để xác định section active khi cuộn
+                        // (Đỉnh section nằm trong khoảng 1/3 màn hình từ trên xuống, và đáy section chưa cuộn qua hết nav bar)
+                        if (sectionTopRelativeToViewport <= window.innerHeight / 3 && (sectionTopRelativeToViewport + sectionHeight) > (navHeight / 2)) {
                             currentActiveLink = item.linkElement;
                             currentVisibleSectionText = item.linkElement.textContent;
                             break;
@@ -1132,26 +1206,24 @@
                     currentActiveLink.classList.add('active-link');
                 }
 
-                // Cập nhật tiêu đề trên mobile CHỈ KHI CUỘN (không phải khi click mở menu)
-                // và menu đang đóng
                 if (window.innerWidth <= 768 && currentSectionTitleEl && !navLinksContainer.classList.contains('active')) {
                     if (currentVisibleSectionText) {
                         currentSectionTitleEl.textContent = currentVisibleSectionText;
                     } else if (!clickedLink) {
-                        // Nếu cuộn ra ngoài tất cả các section (ví dụ lên đầu trang), quay về tiêu đề mặc định
-                        // Chỉ làm điều này nếu không phải là kết quả của một click (clickedLink = null)
-                        // Kiểm tra xem có section nào đang active không, nếu không thì về default
                         let anySectionIsActiveByScroll = false;
                         for (const item of sections) {
                             const sectionTopRelativeToViewport = item.sectionElement.getBoundingClientRect().top - navHeight;
                             const sectionHeight = item.sectionElement.offsetHeight;
-                            if (sectionTopRelativeToViewport <= window.innerHeight / 3 && (sectionTopRelativeToViewport + sectionHeight) > navHeight / 2) {
+                            if (sectionTopRelativeToViewport <= window.innerHeight / 3 && (sectionTopRelativeToViewport + sectionHeight) > (navHeight / 2)) {
                                 anySectionIsActiveByScroll = true;
                                 break;
                             }
                         }
                         if (!anySectionIsActiveByScroll) {
-                            currentSectionTitleEl.textContent = defaultMobileTitle;
+                            // Nếu không có section nào active do cuộn (ví dụ cuộn lên đầu trang), và không phải do click
+                            if (window.scrollY < sections[0]?.sectionElement.offsetTop - navHeight - 50) { // Thêm một khoảng đệm nhỏ
+                                currentSectionTitleEl.textContent = defaultMobileTitle;
+                            }
                         }
                     }
                 }
@@ -1164,7 +1236,7 @@
                     const targetElement = document.querySelector(targetId);
                     const linkText = this.textContent;
 
-                    updateActiveState(this); // Cập nhật trạng thái active cho link vừa click
+                    // updateActiveState(this); // Cập nhật ngay để link được active
 
                     if (targetElement) {
                         let scrollOffset = 0;
@@ -1175,73 +1247,97 @@
                                 hamburgerIconBtn.innerHTML = '☰';
                             }
                             scrollOffset = document.getElementById('mobile-nav-bar').offsetHeight;
-                            if (currentSectionTitleEl) currentSectionTitleEl.textContent = linkText; // Cập nhật tiêu đề khi click
+                            if (currentSectionTitleEl) currentSectionTitleEl.textContent = linkText;
                         } else {
                             scrollOffset = mainNav.offsetHeight;
                         }
 
-                        // Tạm thời vô hiệu hóa theo dõi cuộn trong khi đang cuộn mượt
-                        // để tránh việc `updateActiveState` do scroll ghi đè tiêu đề vừa set do click
-                        let isSmoothScrolling = true;
-                        window.addEventListener('scroll', scrollEndListener);
+                        // Đánh dấu đang cuộn mượt để tránh updateActiveState từ event scroll ghi đè
+                        document.documentElement.classList.add('is-smooth-scrolling');
 
                         window.scrollTo({
-                            top: targetElement.offsetTop - scrollOffset,
+                            top: targetElement.offsetTop - scrollOffset - 5, // Thêm offset nhỏ để không bị che
                             behavior: 'smooth'
                         });
 
-                        function scrollEndListener() {
-                            // Giả sử cuộn mượt kết thúc sau một khoảng thời gian hoặc khi không có thay đổi vị trí
-                            // Đây là một cách đơn giản hóa, có thể dùng IntersectionObserver hoặc timeout
-                            clearTimeout(window.scrollEndTimer);
-                            window.scrollEndTimer = setTimeout(() => {
-                                window.removeEventListener('scroll', scrollEndListener);
-                                isSmoothScrolling = false;
-                                updateActiveState(); // Cập nhật lại trạng thái sau khi cuộn xong
-                            }, 150); // 150ms là một khoảng thời gian chờ hợp lý
+                        // Xử lý sau khi cuộn mượt kết thúc
+                        // Dùng một timeout nhỏ để giả định cuộn đã xong
+                        // Cách tốt hơn là dùng IntersectionObserver hoặc 'scrollend' event (nếu trình duyệt hỗ trợ)
+                        let scrollEndTimer;
+                        const checkScrollEnd = () => {
+                            clearTimeout(scrollEndTimer);
+                            scrollEndTimer = setTimeout(() => {
+                                document.documentElement.classList.remove('is-smooth-scrolling');
+                                updateActiveState(this); // Cập nhật lại chính xác link active sau khi cuộn xong
+                            }, 150); // 150ms là thời gian chờ, có thể điều chỉnh
+                        };
+
+                        // Lắng nghe sự kiện scroll để biết khi nào cuộn dừng
+                        // Đây là cách đơn giản, có thể không hoàn hảo 100%
+                        let lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                        function scrollHandlerForSmoothEnd() {
+                            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                            if (scrollTop === lastScrollTop) { // Nếu vị trí không đổi, coi như dừng
+                                window.removeEventListener('scroll', scrollHandlerForSmoothEnd);
+                                checkScrollEnd();
+                            } else {
+                                lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
+                                clearTimeout(scrollEndTimer); // Nếu vẫn đang cuộn, reset timer
+                            }
                         }
+                        window.addEventListener('scroll', scrollHandlerForSmoothEnd, { passive: true });
+                        // Fallback nếu scroll event không được kích hoạt đủ (ví dụ target đã ở trong view)
+                        checkScrollEnd();
                     }
                 });
             });
 
             let scrollTimeout;
             window.addEventListener('scroll', function () {
-                // Sử dụng debounce để tối ưu hiệu năng, tránh gọi updateActiveState quá nhiều lần khi cuộn nhanh
+                if (document.documentElement.classList.contains('is-smooth-scrolling')) {
+                    return; // Nếu đang cuộn mượt do click, không làm gì cả
+                }
                 clearTimeout(scrollTimeout);
                 scrollTimeout = setTimeout(function () {
-                    if (!document.querySelector('html').classList.contains('is-smooth-scrolling')) {
-                        updateActiveState();
-                    }
-                }, 50); // Giảm độ trễ để phản hồi nhanh hơn, nhưng vẫn debounce
+                    updateActiveState();
+                }, 50);
             });
 
-            // Gộp hàm xử lý scroll cho nút "Lên đầu trang" và cập nhật active link
             const scrollTopBtn = document.getElementById("scrollTopBtn");
             const combinedScrollHandler = function () {
-                // Cho nút scroll top
                 if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
                     scrollTopBtn.style.display = "block";
                 } else {
                     scrollTopBtn.style.display = "none";
                 }
-                // Cập nhật active link (đã có debounce ở trên, nhưng gọi ở đây để đảm bảo)
-                // clearTimeout(scrollTimeout); // Xóa timeout cũ nếu có
-                // scrollTimeout = setTimeout(function() {
-                //     if (!document.querySelector('html').classList.contains('is-smooth-scrolling')) {
-                //          updateActiveState();
-                //     }
-                // }, 50);
-                // Thực ra, event listener scroll ở trên đã đủ, không cần gọi lại updateActiveState() ở đây nữa.
             };
 
-            window.onscroll = combinedScrollHandler; // Gán hàm xử lý scroll tổng hợp
+            window.onscroll = combinedScrollHandler;
 
-            // Khởi tạo trạng thái ban đầu
-            combinedScrollHandler(); // Cho nút scroll top
-            updateActiveState();    // Cho active link và tiêu đề mobile
+            combinedScrollHandler();
+            updateActiveState();
 
             window.scrollToTop = function () {
+                document.documentElement.classList.add('is-smooth-scrolling');
                 window.scrollTo({ top: 0, behavior: 'smooth' });
+                // Xóa class sau khi cuộn xong
+                let scrollEndTimerForTop;
+                const checkScrollEndForTop = () => {
+                    clearTimeout(scrollEndTimerForTop);
+                    scrollEndTimerForTop = setTimeout(() => {
+                        document.documentElement.classList.remove('is-smooth-scrolling');
+                        updateActiveState(); // Cập nhật lại active link (có thể là "Giới thiệu")
+                    }, 150);
+                };
+                window.addEventListener('scroll', function onScrollToTopEnd() {
+                    if (window.pageYOffset === 0) {
+                        window.removeEventListener('scroll', onScrollToTopEnd);
+                        checkScrollEndForTop();
+                    } else {
+                        clearTimeout(scrollEndTimerForTop); // Nếu vẫn đang cuộn, reset timer
+                    }
+                }, { passive: true });
+                checkScrollEndForTop(); // Fallback
             }
         });
     </script>
